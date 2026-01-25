@@ -1,0 +1,451 @@
+.root{
+    -fx-font-family: 'Pokemon Classic Regular';
+}
+
+.pane {
+    -fx-background-color: #262e35;
+}
+
+.label {
+    -fx-font-family: 'Pokemon Classic Regular';
+}
+
+/* Computer Room */
+.computerRoomBG {
+    -fx-background-image: url("../img/ComputerRoom/computerRoomBG.png");
+    -fx-background-color: #212121;
+}
+
+/* Email Popup */
+.emailBackground {
+    -fx-background-image: url("../img/ComputerRoom/EmailWindow.png");
+}
+
+.acceptBtn {
+    -fx-text-fill: #000000;
+    -fx-background-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-background-color: #1b1b1c;
+}
+
+/* Labo Door Room */
+.laboDoorBG {
+    -fx-background-image: url("../img/laboratoryDoorRoom/doorBG.png");
+    -fx-background-color: #212121;
+}
+
+/* Laboratory */
+.laboratoryBG {
+    -fx-background-image: url("../img/laboratoryBG.png");
+    -fx-background-color: #212121;
+}
+
+.light {
+    -fx-background-color: black;
+    -fx-opacity: 0.7;
+}
+
+.saveGame {
+    -fx-graphic: url("../img/saveGame.png");
+}
+
+.gameTutorial {
+    -fx-graphic: url("../img/questionMark.png");
+}
+
+#sortBtn {
+    -fx-graphic: url("../img/sort.png");
+}
+
+/* Living Room */
+
+.livingRoomBG {
+    -fx-background-image: url("../img/livingRoom_Items/Raum2EmptyBG.png");
+    -fx-background-color: #212121;
+}
+
+/* Tutorial */
+#explanationText, #pageCount{
+    -fx-text-fill: white;
+    -fx-font-size: 9;
+}
+
+#leftButton, #rightButton{
+    -fx-text-fill: white;
+    -fx-font-size: 8;
+}
+
+#pageCount{
+    -fx-font-size: 8;
+}
+
+/* Menu */
+#menu_button{
+    -fx-font-size: 20px;
+    -fx-text-fill: #161616;
+
+}
+#menu_button:hover{
+    -fx-text-fill: #9a2c17;
+}
+
+/*Back To Menu and Confirmation */
+#backToMenu{
+    -fx-graphic: url("../img/Home.png");
+}
+
+.backgroundConfMenu{
+    -fx-background-color: none;
+}
+
+.colorBackground{
+    -fx-background-color: #292c2f;
+}
+
+.textConfMenu{
+    -fx-text-fill: white;
+}
+
+.yesNoButton{
+    -fx-font-family: 'Pokemon Classic Regular';
+    -fx-background-image:  url("../img/buttonBackToMenu.png");
+    -fx-text-fill: white;
+}
+
+.yesNoButton:pressed {
+    -fx-translate-y: 3px;
+}
+
+
+/* Configurations */
+.configurationBG{
+    -fx-background-image: url("../img/caseFile.png");
+    -fx-background-color: #161616;
+}
+
+.nameField:focused {
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #161616;
+    -fx-text-fill: #161616;
+}
+
+.nameField {
+    -fx-prompt-text-fill: #161616;
+    -fx-min-width: 290px;
+    -fx-max-width: 290px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #161616;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-color: transparent;
+    -fx-text-fill: #161616;
+    -fx-font-size: 15pt;
+    -fx-background-radius: 0px;
+}
+
+.girlButton {
+    -fx-graphic: url("../img/girlSymbol.png");
+}
+
+.boyButton {
+    -fx-graphic: url("../img/boySymbol.png");
+}
+
+.genderButton {
+    -fx-background-color: none;
+}
+
+.genderButton:selected {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.categoryBorder {
+    -fx-background-image: url("../img/category.png");
+    -fx-background-repeat: no-repeat;
+}
+
+.colorButton {
+    -fx-background-color: none;
+}
+
+.colorButton:selected {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.9) , 6, 0.0 , 0 , 2 );
+}
+
+.characterBorder {
+    -fx-background-image: url("../img/characterBorder.png");
+    -fx-background-color: #83654d;
+}
+
+.confButton {
+    -fx-font-family: 'Pokemon Classic Regular';
+    -fx-font-size: 18px;
+}
+
+/* Remove General Style of buttons */
+.button {
+    -fx-background-color: none;
+}
+
+/* Inventory */
+.inventoryBackground{
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-background-image: url("../img/inventory.png");
+}
+
+/* Settings */
+#settings_background {
+    -fx-background-image: url("../img/settings_bg3.png");
+
+}
+
+#back {
+    -fx-graphic: url("../img/Button_pc.png");
+}
+
+#checkEN .box, #checkDE .box, #checkDark .box, #checkLight .box {
+    -fx-pref-height: 27px;
+    -fx-pref-width: 27px;
+    -fx-background-color: #212121;
+    -fx-border-width: 3px;
+    -fx-border-color: #393939;
+}
+
+#effectSlider .track, #soundSlider .track{
+    -fx-background-color: #212121;
+    -fx-pref-height:14;
+}
+
+#effectSlider, #soundSlider{
+    -fx-pref-width: 280;
+}
+
+#effectSlider .thumb, #soundSlider .thumb {
+    -fx-background-color: #393939;
+    -fx-pref-height: 20;
+    -fx-pref-width: 20;
+}
+
+/* Popup that describes any item */
+#textPopup{
+    -fx-text-fill: #d7d7d7;
+    -fx-font-family: "Pokemon Classic Regular";
+    -fx-font-size: 19px;
+    -fx-background-color: black, black;
+}
+
+#textPopup .content {
+    -fx-padding: 20px 20px 20px 20px;
+    -fx-background-color: black;
+}
+
+#textPopup:focused .content {
+    -fx-background-color: black;
+}
+
+#textPopUpBackground {
+    -fx-background-color: transparent;
+}
+
+.imageMinigameTrue{
+    -fx-background-color: #81d073
+}
+.imageMinigameFalse{
+    -fx-background-color: #d07373
+}
+
+/* Popup that starts a minigame */
+#closeLabel{
+    -fx-font-size: 23px;
+}
+
+/*M_pc style*/
+#pc_background{
+    -fx-background-image: url("../img/bg_pc.png");
+}
+
+#pwField .text-area {
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+}
+
+#pwField{
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: dimgray;
+}
+#pc_reset_button {
+    -fx-font-family: 'Pokemon Classic Regular';
+    -fx-font-size: 15px;
+    -fx-graphic: url("../img/Button_pc.png");
+}
+
+#pc_enter_button {
+    -fx-font-family: 'Pokemon Classic Regular';
+    -fx-font-size: 15px;
+    -fx-graphic: url("../img/Button_pc.png");
+}
+
+#pc_riddleText{
+    -fx-text-fill: gainsboro;
+}
+
+
+
+/* M_Code */
+.keypad {
+    -fx-text-fill: #1b1b1c;
+    -fx-font-family: 'Pokemon Classic Regular';
+    -fx-background-color: none;
+    -fx-font-size: 35px;
+}
+
+.keypad:pressed {
+    -fx-scale-y: 0.95;
+    -fx-scale-x: 0.95;
+    -fx-translate-y: 5px;
+}
+
+.keypad_options {
+    -fx-font-size: 15px;
+}
+
+#m_codeBackground{
+    -fx-background-image: url("../img/minigame_code_Background.png");
+}
+
+.m_keypadBackground{
+    -fx-background-image: url("../img/keypad_background.png");
+}
+
+#keypadArea {
+    -fx-font-size: 50px;
+    -fx-text-fill: #318add;
+    -fx-prompt-text-fill: #318add;
+    -fx-background-color: none;
+}
+
+#keypadArea .content {
+    -fx-padding: 0px 0px 20px 20px;
+    -fx-background-image: url("../img/keypad_textarea.png");
+}
+
+#keypadArea .scroll-pane {
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+}
+
+/*CSS for 4Image minigame*/
+
+.ImageGameButton {
+    -fx-graphic: url("../img/Button.png");
+
+}
+
+.ImageGameButton:pressed, .ImageGameButtonDeleteReset:pressed{
+    -fx-translate-y: 3px;
+}
+
+.ImageGameButtonDeleteReset{
+    -fx-graphic: url("../img/DeleteButton.png");
+    -fx-font-family: 'Pokemon Classic Regular';
+}
+
+.border{
+    -fx-background-color: #d7b17f;
+    -fx-background-image: url("../img/4ImageButtonBorder.png");
+}
+
+.background{
+    -fx-background-image: url("../img/4ImageBackground.png");
+}
+
+.imageMinigameTrue{
+    -fx-background-color: #81d073
+}
+.imageMinigameFalse{
+    -fx-background-color: #d07373
+}
+
+/*Inventory of doorlock minigame */
+#inventory{
+    -fx-background-image: url("../img/minigame_doorlock_inventory.png");
+}
+
+
+/* Highscore view */
+.highscoreBackground{
+    -fx-background-image: url("../img/Highscore.png");
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: lightgrey;
+
+}
+
+.table-view .column-header {
+    -fx-background-color: lightgrey;
+}
+
+.table-view:focused{
+    -fx-background-color: none;
+}
+
+.table-view .table-cell{
+    -fx-background-color: #c9e3e1;
+    -fx-alignment: CENTER;
+
+}
+
+#backgroundHighscoreAbove{
+    -fx-background-color: #2e454e;
+}
+
+#backgroundHighscoreUnder{
+    -fx-background-color: #1d3333;
+}
+
+.refreshBtn{
+    -fx-graphic: url("../img/refreshButton.png")
+}
+
+.refreshBtn:pressed{
+    -fx-translate-y: 3px;
+}
+
+
+/* M_Window */
+.windowBackground{
+    -fx-background-image: url("../img/windowView.png");
+}
+
+/* M_Tidyup */
+
+#bedBackground{
+    -fx-background-image: url("../img/under_the_bed.png");
+}
+
+/*Table end minigame*/
+
+#backgroundTableMinigame{
+    -fx-background-image: url("../img/tableEndMinigame/background_minigameTable.png");
+}
+
+#confirmButton{
+    -fx-graphic: url("../img/tableEndMinigame/confirmTable.png");
+}
+
+#tableEndInvi {
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 5.0 5.0 5.0 5.0;
+    -fx-background-color: #393939;
+    -fx-border-style: solid;
+    -fx-border-color: #1b1b1c;
+    -fx-border-width: 3px;
+}
+
+
+.closeLabelEnding{
+    -fx-font-size: 10;
+}
+

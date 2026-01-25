@@ -1,0 +1,174 @@
+.root{
+    -fx-font-family: 'Pokemon Classic Regular';
+}
+
+.pane {
+    -fx-background-color: grey;
+}
+
+.label {
+    -fx-font-family: 'Pokemon Classic Regular';
+}
+
+/* Popup that describes any item */
+.text-area{
+    -fx-background-color: black, black;
+}
+
+.text-area .content {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-family: "Pokemon Classic Regular";
+}
+
+.text-area:focused .content {
+    -fx-background-color: black;
+}
+
+/* Remove General Style of buttons */
+.button {
+    -fx-background-color: none;
+}
+
+/*Back To Menu */
+#backToMenu{
+    -fx-graphic: url("../img/Home.png");
+}
+
+.backgroundConfMenu{
+    -fx-background-color: none;
+}
+
+.colorBackground{
+    -fx-background-color: #f6f3d9;
+}
+
+.textConfMenu{
+    -fx-text-fill: #512407;
+}
+
+.yesNoButton{
+    -fx-background-image:  url("../img/buttonBackToMenu.png");
+    -fx-text-fill: #512407;
+}
+
+.yesNoButton:pressed {
+    -fx-translate-y: 3px;
+}
+
+/* Tutorial */
+#explanationText, #pageCount{
+    -fx-text-fill: white;
+    -fx-font-size: 10;
+}
+
+#leftButton, #rightButton{
+    -fx-text-fill: white;
+}
+
+/* menu */
+#menu_button{
+    -fx-font-size: 20px;
+    -fx-text-fill: #161616;
+
+}
+#menu_button:hover{
+    -fx-text-fill: #9a2c17;
+}
+
+
+
+#textPopUp {
+    -fx-background-color: transparent;
+}
+
+/* Popup that starts a minigame */
+#closeLabel{
+    -fx-font-size: 23px;
+}
+
+
+
+/*CSS for 4 image minigame*/
+/* todo background for lightmode */
+.imageMinigameTrue{
+    -fx-background-color: #81d073
+}
+
+.imageMinigameFalse{
+    -fx-background-color: #d07373
+}
+
+.background{
+    -fx-background-image: url("../img/4ImageBackground.png");
+}
+
+
+.ImageGameButton {
+    -fx-graphic: url("../img/Button.png");
+
+}
+
+.ImageGameButton:pressed, .ImageGameButtonDeleteReset:pressed{
+    -fx-translate-y: 3px;
+}
+
+.ImageGameButtonDeleteReset{
+    -fx-graphic: url("../img/DeleteButton.png");
+    -fx-font-family: 'Pokemon Classic Regular';
+}
+
+.border{
+    -fx-background-color: #d7b17f;
+    -fx-background-image: url("../img/4ImageButtonBorder.png");
+}
+
+/*Inventory of doorlock minigame */
+#inventory{
+    -fx-background-image: url("../img/minigame_doorlock_inventory.png");
+}
+
+
+/* Highscore view */
+.highscoreBackground{
+    -fx-background-image: url("../img/Highscore.png");
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: lightgrey;
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header {
+    -fx-background-color: lightgrey;
+}
+
+.table-view:focused{
+    -fx-background-color: none;
+}
+
+
+.table-view .table-cell{
+    -fx-background-color: #c9e3e1;
+}
+
+#backgroundHighscoreAbove{
+    -fx-background-color: #97aba9;
+}
+
+#backgroundHighscoreUnder{
+    -fx-background-color: #607977;
+}
+
+.refreshBtn{
+    -fx-graphic: url("../img/refreshButton.png")
+}
+
+.refreshBtn:pressed{
+    -fx-translate-y: 3px;
+}
+
+
+.closeLabelEnding{
+    -fx-font-size: 10;
+}

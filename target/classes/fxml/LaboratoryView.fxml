@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="720.0" prefWidth="1280.0" styleClass="laboratoryBG" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.LaboratoryController">
+   <children>
+      <HBox fx:id="bottom" alignment="CENTER_LEFT" layoutX="58.0" layoutY="651.0" prefHeight="72.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="651.0">
+         <padding>
+            <Insets bottom="20.0" left="55.0" right="40.0" />
+         </padding>
+         <children>
+            <Button id="sortBtn" fx:id="sort" graphicTextGap="0.0" mnemonicParsing="false" textFill="#e7e7e7" />
+            <Region prefHeight="57.0" prefWidth="12.0" />
+         </children>
+      </HBox>
+      <ImageView fx:id="settingsIcon" layoutX="1161.0" layoutY="684.0">
+         <image>
+            <Image url="@../img/settings_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ENTRYDOOR" layoutX="194.0" layoutY="35.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/entryDoor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KEYCROSS" fitHeight="25.0" fitWidth="23.0" layoutX="473.0" layoutY="520.0">
+         <image>
+            <Image url="@../img/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="WINDOW" layoutX="372.0" layoutY="46.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/woodWindow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINITABLE1" layoutX="376.0" layoutY="104.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/miniTable.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINITABLE2" layoutX="454.0" layoutY="103.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/miniTable.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="WOODWINDOW" layoutX="451.0" layoutY="46.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/woodWindow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CANDLE1" layoutX="387.0" layoutY="78.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/candle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CANDLE2" layoutX="465.0" layoutY="78.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/candle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TRASH1" layoutX="510.0" layoutY="97.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/trash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TRASH2" layoutX="282.0" layoutY="313.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/trash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SCREEN1" layoutX="550.0" layoutY="46.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/screen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KEYKARO" layoutX="1055.0" layoutY="349.0">
+         <image>
+            <Image url="@../img/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KEYPIK" layoutX="262.0" layoutY="343.0">
+         <image>
+            <Image url="@../img/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SCREEN2" layoutX="633.0" layoutY="46.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/screen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="REDLIGHT1" layoutX="524.0" layoutY="53.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/redLight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="REDLIGHT2" layoutX="687.0" layoutY="53.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/redLight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="WOODTABLE" layoutX="549.0" layoutY="101.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/woodTable.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BIGCHAIR" layoutX="587.0" layoutY="150.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/bigChair.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KEYBOARD1" layoutX="590.0" layoutY="129.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/keyboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PC" layoutX="547.0" layoutY="86.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/monitorsTriple.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RECIPE_WATER" layoutX="640.0" layoutY="128.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PEN1" layoutX="652.0" layoutY="138.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/pen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="HARDWARE1" layoutX="678.0" layoutY="115.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/PC.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FLOWER1" layoutX="686.0" layoutY="289.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FLOWER2" disable="true" layoutX="467.0" layoutY="500.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="VENTS2" layoutX="136.0" layoutY="523.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/machinesVents.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="VENTS1" layoutX="136.0" layoutY="452.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/machines2Vents.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MACHINES1" layoutX="136.0" layoutY="426.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/machines2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MACHINES2" fitHeight="42.0" fitWidth="262.0" layoutX="136.0" layoutY="498.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/machines.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="HARDWARE2" layoutX="139.0" layoutY="313.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/PC.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TABLE2" layoutX="173.0" layoutY="298.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/miniMetalTable.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BIGCHAIR" layoutX="201.0" layoutY="345.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/bigChair.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KEYBOARD2" layoutX="205.0" layoutY="324.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/keyboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MONITOR1" layoutX="183.0" layoutY="287.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/monitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MONITOR2" layoutX="226.0" layoutY="287.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/monitor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BLOOD" layoutX="897.0" layoutY="390.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/blood.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RECIPE_YEAST" layoutX="920.0" layoutY="381.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/vents.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE4" layoutX="1016.0" layoutY="482.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE2" layoutX="937.0" layoutY="497.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPERSTACK1" layoutX="1037.0" layoutY="452.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/paperStack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TABLE" fitHeight="180.0" fitWidth="221.0" layoutX="883.0" layoutY="195.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/bigMetalTable.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SUGAR" fitHeight="32.0" fitWidth="32.0" layoutX="975.0" layoutY="194.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/bag.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPERSTACK2" layoutX="944.0" layoutY="214.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/paperStack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PEN2" layoutX="1066.0" layoutY="275.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/pen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SUBSTANCES" layoutX="990.0" layoutY="218.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/substances.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPER3" layoutX="901.0" layoutY="210.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/paper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE3" layoutX="907.0" layoutY="244.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINICHAIR2" layoutX="841.0" layoutY="225.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/miniChair.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINICHAIR1" layoutX="841.0" layoutY="270.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/miniChair.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINICHAIR3" layoutX="1103.0" layoutY="297.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/miniChair.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="WEIRDDRAWING" layoutX="895.0" layoutY="314.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/weirdDrawing.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BULLETIN" layoutX="926.0" layoutY="35.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/bulletinBoard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE5" layoutX="948.0" layoutY="59.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE6" layoutX="979.0" layoutY="46.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPER1" layoutX="1020.0" layoutY="43.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/paper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPER2" layoutX="1060.0" layoutY="43.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/paper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MONALISA" layoutX="1103.0" layoutY="43.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/monaLisa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="METALWINDOW" layoutX="866.0" layoutY="45.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/metalWindow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="DOOR" layoutX="758.0" layoutY="36.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/livingRoomDoor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="windowLight" disable="true" fitHeight="120.0" fitWidth="599.0" layoutX="338.0" layoutY="47.0">
+      <image>
+         <Image url="@../img/Laboratory_Items/windowLight.png" />
+      </image>
+   </ImageView>
+      <Pane fx:id="LIGHT" focusTraversable="true" prefHeight="744.0" prefWidth="1300.0" styleClass="light" />
+      <ImageView fx:id="JUNCTIONBOX" layoutX="142.0" layoutY="63.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/lightPower.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="failContainer" alignment="CENTER_LEFT" layoutX="1048.0" layoutY="614.0" prefHeight="23.0" prefWidth="136.0" spacing="5.0">
+         <children>
+            <Label fx:id="failTitle" text="Failcount:" textFill="#868686">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label fx:id="failCountLabel" textFill="#868686">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="FADE" disable="true" fitHeight="744.0" fitWidth="1300.0">
+         <image>
+            <Image url="@../img/laboratoryDoorRoom/blackness.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="tutorial" alignment="TOP_LEFT" graphicTextGap="0.0" layoutX="70.0" layoutY="11.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="50.0" styleClass="gameTutorial" textFill="#e7e7e7" />
+      <VBox fx:id="saveContainer" alignment="TOP_CENTER" layoutX="1152.0" layoutY="17.0" prefHeight="64.0" prefWidth="121.0">
+         <children>
+            <Button fx:id="saveGame" alignment="TOP_LEFT" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="153.0" styleClass="saveGame" textFill="#e7e7e7" />
+            <Label fx:id="saveInfo" alignment="CENTER" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="35.0" top="-5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <HBox fx:id="backcontainer" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="67.0" prefHeight="37.0" prefWidth="108.0">
+         <children>
+            <Button fx:id="backToMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" textAlignment="RIGHT" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

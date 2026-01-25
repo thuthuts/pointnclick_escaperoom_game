@@ -1,0 +1,23 @@
+JavaFX Application Thread DEBUG support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@54f7abf0
+JavaFX Application Thread DEBUG xml.XmlBeanDefinitionReader - Loaded 32 bean definitions from URL [file:src/main/resources/spring/spring.xml]
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'inventoryManager'
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'failCountProperty'
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'settingsManager'
+JavaFX Application Thread INFO  player.SettingsManager - Created default settings - Language : English , Theme : Dark
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jsonTextManager'
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'inventory'
+JavaFX Application Thread DEBUG gui.GridpaneBuilder - Inventory created
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'player'
+JavaFX Application Thread INFO  player.SettingsManager - Created default settings - Language : English , Theme : Dark
+JavaFX Application Thread INFO  player.Player - A new Player has been created...
+Player name: null
+Date Start: null
+Date End: null
+Fail Counter: 0
+SumPlayTime: null
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'soundPlayer'
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'm_code'
+JavaFX Application Thread DEBUG support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'm_doorlock'
+JavaFX Application Thread DEBUG game.JSONTextManager - Item Description Hashmap has been created
+Thread-3 DEBUG thread.HighscoreThread - [] data received
+JavaFX Application Thread INFO  gui.Main - The application is running...

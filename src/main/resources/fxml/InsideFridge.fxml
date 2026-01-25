@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="container" prefHeight="560" prefWidth="770" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.FridgeController">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fridge0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="WHISKEY" fitHeight="248.0" fitWidth="82.0" layoutX="568.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fridge_whiskey.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="560.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fridge1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="closeLabel" layoutX="724.0" layoutY="32.0" text="X" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0" />
+   </children>
+</AnchorPane>

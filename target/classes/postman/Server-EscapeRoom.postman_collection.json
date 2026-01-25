@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "907d4107-c89f-4106-9f46-62c76077d208",
+		"name": "Server-EscapeRoom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/players",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZXNjYXBlOmphbnNs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"UwUu\",\"endDate\":\"2020-11-25, 13:39:35\",\"startDate\":\"2020-11-25, 13:39:35\",\"sumPlayTime\":\"0:0:0:0\",\"failCounter\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/players",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZXNjYXBlOmphbnNs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{host}}/players",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/players",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZXNjYXBlOmphbnNs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/players/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8ebd8e2a-b171-4c35-9aeb-b99d65fac969",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1e809581-418f-4a3c-9150-b53cf9714458",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "2847c2a6-93d3-4b5b-b9e3-a5b99aa257ea",
+			"key": "host",
+			"value": ""
+		}
+	],
+	"protocolProfileBehavior": {}
+}

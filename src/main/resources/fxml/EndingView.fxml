@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" styleClass="backgroundConfMenu" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.EndingController">
+   <children>
+      <Pane layoutX="8.0" layoutY="6.0" prefHeight="285.0" prefWidth="581.0" styleClass="colorBackground" />
+      <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/BackToMenu.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="600.0" styleClass="textConfMenu" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="85.0" prefWidth="593.0" styleClass="textConfMenu" text="%congrats" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="STATS" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="600.0" styleClass="textConfMenu" textAlignment="CENTER">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="STATS2" alignment="CENTER" prefHeight="57.0" prefWidth="600.0" styleClass="textConfMenu" textAlignment="CENTER">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="CREDITS" alignment="CENTER" graphicTextGap="0.0" prefHeight="109.0" prefWidth="600.0" styleClass="textConfMenu" textAlignment="CENTER">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label id="closeLabelEnding" fx:id="closeLabelEnding" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="561.0" layoutY="17.0" prefHeight="15.0" prefWidth="15.0" styleClass="closeLabelEnding" text="X" textFill="WHITE">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

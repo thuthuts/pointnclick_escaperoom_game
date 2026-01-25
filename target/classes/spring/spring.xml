@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="inventoryManager" class="project.game.player.PlayerProgressManager">
+    </bean>
+    <bean id="failCountProperty" class="project.game.player.FailCountProperty">
+    </bean>
+    <bean id="settingsManager" class="project.game.player.SettingsManager">
+    </bean>
+    <bean id ="jsonTextManager" class="project.game.JSONTextManager">
+    </bean>
+    <bean id ="inventory" class="project.gui.GridpaneBuilder">
+    </bean>
+    <bean id="inventoryBuilder" class="project.game.InventoryBuilder" scope="prototype">
+        <constructor-arg ref="inventory"/>
+        <constructor-arg ref="player"/>
+    </bean>
+
+    <bean id="player" class="project.game.PlayerFactory" factory-method="getPlayer">
+        <constructor-arg type="java.lang.String" value="playerData"/>
+    </bean>
+
+    <bean id ="soundPlayer" class="project.audio.SoundPlayer">
+        <constructor-arg ref="player"/>
+    </bean>
+
+    <bean id ="mainController" class="project.gui.MainController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+        <constructor-arg ref="jsonTextManager"/>
+    </bean>
+
+    <bean id ="computerRoomController" class="project.gui.ComputerRoomController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="jsonTextManager"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="emailController" class="project.gui.EmailController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="laboratoryController" class="project.gui.LaboratoryController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="jsonTextManager"/>
+        <constructor-arg ref="inventory"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="backToMenuController" class="project.gui.BackToMenuController" scope="prototype">
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="fridgeController" class="project.gui.FridgeController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+    </bean>
+
+    <bean id ="livingRoomController" class="project.gui.LivingRoomController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="jsonTextManager"/>
+        <constructor-arg ref="inventory"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="confirmationController" class="project.gui.ConfirmationController" scope="prototype">
+        <constructor-arg ref="player"/>
+    </bean>
+
+    <bean id ="endingController" class="project.gui.EndingController" scope="prototype">
+        <constructor-arg ref="player"/>
+    </bean>
+
+    <bean id ="highscoreController" class="project.gui.HighscoreController" scope="prototype">
+        <constructor-arg ref="player"/>
+    </bean>
+
+    <bean id ="settingsController" class="project.gui.SettingsController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="itemDescPopupController" class="project.gui.ItemDescPopupController" scope="prototype">
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id="configurationsController" class="project.gui.ConfigurationsController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id="laboDoorController" class="project.gui.LaboDoorController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="tutorialController" class="project.gui.TutorialController" scope="prototype">
+    </bean>
+
+    <bean id ="winnerController" class="project.gui.WinnerController" scope="prototype">
+        <constructor-arg ref="player"/>
+    </bean>
+
+    <bean id ="windowController" class="project.gui.minigame.M_WindowController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_4image" class="project.gui.minigame.M_4ImageController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_code" class="project.gui.minigame.M_CodeController">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_doorlock" class="project.gui.minigame.M_DoorLockController">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_light" class="project.gui.minigame.M_LightController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_pc" class="project.gui.minigame.M_PCController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_table" class="project.gui.minigame.M_TableController" scope="prototype">
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="jsonTextManager"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+    <bean id ="m_tidyup" class="project.gui.minigame.M_TidyUpController" scope="prototype" >
+        <constructor-arg ref="player"/>
+        <constructor-arg ref="inventoryBuilder"/>
+        <constructor-arg ref="soundPlayer"/>
+    </bean>
+
+
+</beans>
+

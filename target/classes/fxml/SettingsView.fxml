@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="settings_background" fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.SettingsController">
+<children>
+      <Button id="back" fx:id="back" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="66.0" layoutY="617.0" mnemonicParsing="false" text="%backBtn" textAlignment="CENTER" />
+      <VBox layoutX="407.0" layoutY="172.0" prefHeight="464.0" prefWidth="877.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="170.0" prefWidth="854.0">
+               <children>
+                  <Label fx:id="hLang" prefHeight="40.0" prefWidth="400.0" text="%settingsLang" />
+                  <CheckBox id="checkEN" fx:id="checkEN" mnemonicParsing="false" text="EN" />
+                  <Region prefHeight="100.0" prefWidth="71.0" />
+                  <CheckBox id="checkDE" fx:id="checkDE" mnemonicParsing="false" text="DE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="hSound" prefHeight="41.0" prefWidth="400.0" text="%bgSound" />
+                  <Slider id="soundSlider" fx:id="bgSoundSlider" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="hSound1" prefHeight="41.0" prefWidth="400.0" text="%effectSound" />
+                  <Slider id="effectSlider" fx:id="effectSoundSlider" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="200.0">
+               <children>
+                <!--<Label id="closeLabel" fx:id="closeLabel" layoutX="728.0" layoutY="8.0" text="X" />-->
+                  <Label fx:id="hTheme" prefHeight="41.0" prefWidth="400.0" text="%theme" />
+                  <CheckBox id="checkDark" fx:id="checkDark" mnemonicParsing="false" text="%themeDark" />
+                  <Region prefHeight="100.0" prefWidth="71.0" />
+                  <CheckBox id="checkLight" fx:id="checkLight" mnemonicParsing="false" text="%themeLight" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView layoutX="233.0" layoutY="227.0">
+         <image>
+            <Image url="@../img/language.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="233.0" layoutY="353.0">
+         <image>
+            <Image url="@../img/volume.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="240.0" layoutY="551.0">
+         <image>
+            <Image url="@../img/theme.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="heading" layoutX="491.0" layoutY="62.0" text="Settings">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+</children>
+
+</AnchorPane>

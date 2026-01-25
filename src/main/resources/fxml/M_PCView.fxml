@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pc_background" fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.minigame.M_PCController">
+   <children>
+      <Label id="pc_riddleText" fx:id="riddleText" layoutX="48.0" layoutY="423.0" prefHeight="126.0" prefWidth="675.0" wrapText="true" />
+      <Label id="closeLabel" fx:id="closeLabel" layoutX="717.0" layoutY="19.0" text="X"/>
+      <Button id="pc_enter_button" fx:id="enter" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="247.0" layoutY="463.0" mnemonicParsing="false" onAction="#isCorrectPw" prefHeight="52" prefWidth="102" text="%enterBtnPC" />
+      <Button id="pc_reset_button" fx:id="reset" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="404.0" layoutY="463.0" mnemonicParsing="false" onAction="#reset" prefHeight="52" prefWidth="102" text="%resetBtnPC" />
+
+      <ImageView fx:id="lightRed" fitHeight="38.0" fitWidth="38.0" layoutX="259.0" layoutY="530.0">
+   <image>
+            <Image url="@../img/light_red.png" />
+   </image>
+      </ImageView>
+
+      <ImageView fx:id="lightGreen" fitHeight="38.0" fitWidth="38.0" layoutX="289.0" layoutY="531.0">
+   <image>
+            <Image url="@../img/light_green.png" />
+   </image>
+      </ImageView>
+
+      <ImageView fx:id="greyRed" fitHeight="38.0" fitWidth="38.0" layoutX="259.0" layoutY="531.0">
+   <image>
+            <Image url="@../img/light_grey.png" />
+   </image>
+      </ImageView>
+
+      <ImageView fx:id="greyGreen" fitHeight="38.0" fitWidth="38.0" layoutX="289.0" layoutY="531.0">
+   <image>
+            <Image url="@../img/light_grey.png" />
+   </image>
+      </ImageView>
+      <PasswordField id="pwField" fx:id="pwField" layoutX="259.0" layoutY="407.0" prefHeight="46.0" prefWidth="257.0" promptText="%lablePwField" />
+
+   </children>
+</AnchorPane>

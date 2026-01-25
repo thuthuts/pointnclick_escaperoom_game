@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="720.0" prefWidth="1280.0" styleClass="livingRoomBG" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.LivingRoomController">
+   <children>
+      <HBox fx:id="bottom" alignment="CENTER_LEFT" layoutX="58.0" layoutY="651.0" prefHeight="72.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="651.0">
+         <padding>
+            <Insets bottom="20.0" left="63.0" right="40.0" />
+         </padding>
+         <children>
+            <Button id="sortBtn" fx:id="sort" graphicTextGap="0.0" mnemonicParsing="false" textFill="#e7e7e7" />
+            <Region prefHeight="57.0" prefWidth="12.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="failContainer" alignment="CENTER_LEFT" layoutX="1048.0" layoutY="614.0" prefHeight="23.0" prefWidth="136.0" spacing="5.0">
+         <children>
+            <Label fx:id="failTitle" text="Failcount:" textFill="#868686">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label fx:id="failCountLabel" textFill="#868686">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="settingsIcon" layoutX="1161.0" layoutY="684.0">
+         <image>
+            <Image url="@../img/settings_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LABORATORY" layoutX="29.0" layoutY="504.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/laboratoryDoor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BED" layoutX="138.0" layoutY="65.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/bed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="STARRYNIGHT" layoutX="238.0" layoutY="32.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/starryNight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RECIPE_NACL" layoutX="149.0" layoutY="123.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE6" layoutX="317.0" layoutY="39.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPERSTACK4" layoutX="352.0" layoutY="82.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/paperStack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TRASH3" layoutX="397.0" layoutY="78.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/trash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FLOWERS" layoutX="220.0" layoutY="219.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/flowers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LOCKGREEN" layoutX="260.0" layoutY="227.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/lockGreen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BLUESUBSTANCE" layoutX="322.0" layoutY="237.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/blueSubstance.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BEER" layoutX="360.0" layoutY="233.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/beerBottle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CYANCREWMATE" layoutX="397.0" layoutY="245.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/CYANCrewmate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BOOKSHELF2" layoutX="465.0" layoutY="172.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/bookShelf2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BOOKSHELF1" layoutX="536.0" layoutY="299.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/bookShelf.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SOS" layoutX="143.0" layoutY="531.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/SOS.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fridge" layoutX="144.0" layoutY="430.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/fridge.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PIZZA" layoutX="279.0" layoutY="465.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BOTTLE" layoutX="137.0" layoutY="483.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/bottle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BEER2" layoutX="246.0" layoutY="460.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/multipleBottles2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="DRAWING" layoutX="272.0" layoutY="425.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/wallDrawing.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="VENTS" fitHeight="23.0" fitWidth="296.0" layoutX="134.0" layoutY="569.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/vents.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BLOOD2" layoutX="388.0" layoutY="540.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/blood.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BEER3" layoutX="677.0" layoutY="391.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/beerBottles2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BARRELS1" layoutX="765.0" layoutY="341.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/barrels.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BARRELS2" layoutX="1075.0" layoutY="342.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/barrels.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CHESTS" layoutX="850.0" layoutY="352.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/chests.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TREASURE" layoutX="966.0" layoutY="332.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/treasure2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BEER4" layoutX="759.0" layoutY="388.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/beerBottles.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KNIFES" layoutX="875.0" layoutY="427.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/knifes.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SUBSTANCES2" layoutX="940.0" layoutY="423.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/substances.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE7" layoutX="998.0" layoutY="454.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NOTE8" layoutX="1024.0" layoutY="458.0">
+         <image>
+            <Image url="@../img/Laboratory_Items/note2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SCISSOR" layoutX="1023.0" layoutY="495.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/scissor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PAPERSTACKS" layoutX="1106.0" layoutY="520.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/paperstack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BEER5" layoutX="758.0" layoutY="238.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/multipleBottles3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BEER6" layoutX="1051.0" layoutY="236.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/multipleBottles.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SOFA" layoutX="749.0" layoutY="142.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/sofa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FIREPLACE" layoutX="772.0" layoutY="34.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/fireplace.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINITABLE_LEFT" layoutX="590.0" layoutY="60.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/miniWoodTables.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MINITABLE_RIGHT" layoutX="923.0" layoutY="60.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/miniWoodTables2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NACL" layoutX="967.0" layoutY="59.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/NaCl.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RECIPE_SUGAR" layoutX="545.0" layoutY="75.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/treasure.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FIRE" fitHeight="49.0" fitWidth="70.0" layoutX="777.0" layoutY="48.0">
+         <image>
+            <Image url="@../img/tableEndMinigame/Fire.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="windowLight" disable="true" fitHeight="98.0" fitWidth="1034.0" layoutX="123.0" layoutY="32.0">
+         <image>
+            <Image url="@../img/livingRoom_Items/windowLight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FADE" disable="true" fitHeight="734.0" fitWidth="1290.0">
+         <image>
+            <Image url="@../img/laboratoryDoorRoom/blackness.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="tutorial" alignment="TOP_LEFT" graphicTextGap="0.0" layoutX="70.0" layoutY="11.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="50.0" styleClass="gameTutorial" textFill="#e7e7e7" />
+      <VBox fx:id="saveContainer" alignment="TOP_CENTER" layoutX="1152.0" layoutY="17.0" prefHeight="64.0" prefWidth="121.0">
+         <children>
+            <Button fx:id="saveGame" alignment="TOP_LEFT" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="153.0" styleClass="saveGame" textFill="#e7e7e7" />
+            <Label fx:id="saveInfo" alignment="CENTER" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="35.0" top="-5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <HBox fx:id="backcontainer" alignment="CENTER_RIGHT" layoutX="51.0" layoutY="67.0" prefHeight="40.0" prefWidth="69.0">
+         <children>
+            <Button fx:id="backToMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" textAlignment="RIGHT" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

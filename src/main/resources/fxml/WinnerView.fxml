@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="779.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.WinnerController">
+   <children>
+      <StackPane layoutX="-20.0" layoutY="13.0" prefHeight="275.0" prefWidth="360.0">
+         <children>
+            <ImageView fx:id="forground_winner" fitHeight="548.0" fitWidth="877.0">
+               <image>
+                  <Image url="@../img/tableEndMinigame/forground_winner.png" />
+               </image>
+            </ImageView>
+             <ImageView fx:id="background_winner" fitHeight="519.0" fitWidth="831.0">
+               <image>
+                  <Image url="@../img/tableEndMinigame/background_winner.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="vaccine_big">
+               <image>
+                  <Image url="@../img/tableEndMinigame/vaccine_big.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+       <Label id="closeLabel" fx:id="closeLabel" layoutX="739.0" layoutY="13.0" text="X" />
+   </children>
+</AnchorPane>

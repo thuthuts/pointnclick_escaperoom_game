@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="720.0" prefWidth="1280.0" styleClass="configurationBG" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.ConfigurationsController">
+   <children>
+      <Label layoutX="135.0" layoutY="68.0" text="%configTitle">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="467.0" layoutY="136.0" prefHeight="298.0" prefWidth="607.0">
+         <children>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="175.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" prefHeight="30.0" prefWidth="265.0" styleClass="categoryBorder">
+                     <children>
+                        <Label text="%category1" textFill="#d6a081" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" prefHeight="30.0" prefWidth="265.0" styleClass="categoryBorder">
+                     <children>
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                        <Label text="%category2" textFill="#d6a081" />
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" prefHeight="30.0" prefWidth="265.0" styleClass="categoryBorder">
+                     <children>
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                        <Label text="%category3" textFill="#d6a081" />
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" prefHeight="30.0" prefWidth="265.0" styleClass="categoryBorder">
+                     <children>
+                        <Button fx:id="lHairButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="&lt;" textFill="#d6a081" />
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                        <Label fx:id="hairLabel" alignment="CENTER" text="%category4" textFill="#d6a081" />
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                        <Button fx:id="rHairButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="&gt;" textFill="#d6a081" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" prefHeight="30.0" prefWidth="265.0" styleClass="categoryBorder">
+                     <children>
+                        <Button fx:id="lAccessoryButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="&lt;" textFill="#d6a081" />
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                        <Label fx:id="accessoryLabel" alignment="CENTER" text="%category5" textFill="#d6a081" />
+                        <Region prefHeight="43.0" prefWidth="20.0" />
+                        <Button fx:id="rAccessoryButton" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="&gt;" textFill="#d6a081" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" cacheShape="false" centerShape="false" fillWidth="false" prefHeight="298.0" prefWidth="312.0" scaleShape="false" spacing="11.0">
+               <children>
+                  <GridPane fx:id="skinColors" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="290.0" scaleShape="false" styleClass="gridColors" VBox.vgrow="NEVER">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                    </rowConstraints>
+                     <children>
+                        <ToggleButton fx:id="LIGHTSKIN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" />
+                        <ToggleButton fx:id="BROWNSKIN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="1" />
+                        <ToggleButton fx:id="GREEN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="2" />
+                        <ToggleButton fx:id="BLUE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="3" />
+                        <ToggleButton fx:id="RED" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="4" />
+                        <ToggleButton fx:id="ORANGE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="5" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="eyeColors" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="290.0" styleClass="gridColors" VBox.vgrow="NEVER">
+                     <children>
+                        <ToggleButton fx:id="RED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                        <ToggleButton fx:id="PINK" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="1" />
+                        <ToggleButton fx:id="GREEN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="2" />
+                        <ToggleButton fx:id="BROWN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="3" />
+                        <ToggleButton fx:id="BLUE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="4" />
+                        <ToggleButton fx:id="ORANGE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="5" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="shirtColors" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="290.0" styleClass="gridColors" VBox.vgrow="NEVER">
+                     <children>
+                        <ToggleButton fx:id="RED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" />
+                        <ToggleButton fx:id="PINK" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="1" />
+                        <ToggleButton fx:id="GREEN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="2" />
+                        <ToggleButton fx:id="BROWN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="3" />
+                        <ToggleButton fx:id="BLUE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="4" />
+                        <ToggleButton fx:id="BLOND" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="5" />
+                        <ToggleButton fx:id="BLACK" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="6" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="hairColors" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="290.0" styleClass="gridColors" VBox.vgrow="NEVER">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ToggleButton fx:id="RED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" />
+                        <ToggleButton fx:id="PINK" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="1" />
+                        <ToggleButton fx:id="BROWN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="3" />
+                        <ToggleButton fx:id="GREEN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="2" />
+                        <ToggleButton fx:id="BLUE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="4" />
+                        <ToggleButton fx:id="BLOND" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="5" />
+                        <ToggleButton fx:id="ORANGE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="6" />
+                        <ToggleButton fx:id="BLACK" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="7" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="accessoryColors" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="290.0" styleClass="gridColors" VBox.vgrow="NEVER">
+                     <children>
+                        <ToggleButton fx:id="RED" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" />
+                        <ToggleButton fx:id="PINK" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="1" />
+                        <ToggleButton fx:id="GREEN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="2" />
+                        <ToggleButton fx:id="BROWN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="3" />
+                        <ToggleButton fx:id="BLUE" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="4" />
+                        <ToggleButton fx:id="BLOND" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="5" />
+                        <ToggleButton fx:id="LIGHTSKIN" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="6" />
+                        <ToggleButton fx:id="BLACK" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="colorButton" GridPane.columnIndex="7" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Region prefHeight="37.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="135.0" layoutY="481.0" prefHeight="137.0" prefWidth="456.0" spacing="5.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="72.0" prefWidth="441.0" spacing="10.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="27.0" prefWidth="109.0" text="Agent">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="name" prefHeight="49.0" prefWidth="209.0" promptText="%namePrompt" styleClass="nameField" />
+               </children>
+            </HBox>
+            <Label fx:id="nameError" prefHeight="61.0" prefWidth="421.0" textFill="#570d0d">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <StackPane layoutX="135.0" layoutY="131.0" prefHeight="280.0" prefWidth="260.0" styleClass="characterBorder">
+         <children>
+            <ImageView fx:id="skin" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="shirt" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="hair" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="eyes" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="accessory" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <padding>
+            <Insets bottom="7.0" />
+         </padding>
+      </StackPane>
+      <HBox layoutY="645.0" prefHeight="75.0" prefWidth="1280.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#backToMenu" prefHeight="39.0" prefWidth="191.0" styleClass="confButton" text="%backBtn">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Region prefHeight="75.0" prefWidth="707.0" />
+            <Button mnemonicParsing="false" onAction="#submitConfigurations" prefHeight="39.0" prefWidth="162.0" styleClass="confButton" text="%submitBtn">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="120.0" right="70.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="419.0" layoutY="131.0" onMouseClicked="#randomize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pixel-dice.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" fillHeight="false" layoutX="123.0" layoutY="411.0" maxHeight="-Infinity" prefHeight="39.0" prefWidth="286.0" spacing="10.0">
+         <children>
+            <ToggleButton fx:id="GIRL" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+               <styleClass>
+                  <String fx:value="girlButton" />
+                  <String fx:value="genderButton" />
+               </styleClass>
+            </ToggleButton>
+            <ToggleButton fx:id="BOY" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+               <styleClass>
+                  <String fx:value="boyButton" />
+                  <String fx:value="genderButton" />
+               </styleClass>
+            </ToggleButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

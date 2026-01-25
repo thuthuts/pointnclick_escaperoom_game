@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="backgroundTableMinigame" fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.minigame.M_TableController">
+   <children>
+      <ImageView fx:id="burner" fitHeight="200.0" fitWidth="100.0" layoutX="323.0" layoutY="231.0">
+         <image>
+            <Image url="@../img/tableEndMinigame/bunsenBurner.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="inventoryContainer" alignment="CENTER" layoutY="460.0" prefHeight="100.0" prefWidth="771.0">
+         <children>
+            <GridPane id="tableEndInvi" fx:id="inventoryTable" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="74.0" prefWidth="700.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="list0" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="list1" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="list2" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="list3" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                  <ImageView fx:id="list4" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+                  <ImageView fx:id="list5" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" />
+                  <ImageView fx:id="list6" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" />
+                  <ImageView fx:id="list7" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" />
+               </children>
+            </GridPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor></HBox>
+      <Label id="closeLabel" fx:id="closeLabel" layoutX="728.0" layoutY="8.0" text="X" />
+      <Label fx:id="gram" layoutX="136.0" layoutY="402.0" prefHeight="17.0" prefWidth="31.0" text="0" />
+      <Button fx:id="plus" layoutX="194.0" layoutY="401.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="31.0" text="+" textFill="WHITE" />
+      <Button fx:id="minus" layoutX="86.0" layoutY="400.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="31.0" text="-" textFill="WHITE" />
+      <ImageView fx:id="distillerButton" fitHeight="17.0" fitWidth="18.0" layoutX="363.0" layoutY="384.0">
+         <Image url="@../img/keypad.png" />
+      </ImageView>
+      <Label fx:id="thinkingBox" layoutX="14.0" prefHeight="51.0" prefWidth="665.0" text="Label" textFill="WHITE" />
+      <ImageView fx:id="bowlBox" fitHeight="160.0" fitWidth="160.0" layoutX="74.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="mixerBox" fitHeight="150.0" fitWidth="150.0" layoutX="529.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fx:id="mixerButton" fitHeight="17.0" fitWidth="18.0" layoutX="627.0" layoutY="402.0">
+         <Image url="@../img/keypad.png" />
+      </ImageView>
+      <Button id="confirmButton" fx:id="confirm" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="235.0" layoutY="401.0" mnemonicParsing="false" onAction="#confirm" textFill="white" />
+   </children>
+</AnchorPane>

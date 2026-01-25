@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="m_codeBackground" fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.minigame.M_CodeController">
+   <children>
+      <Label id="closeLabel" fx:id="closeLabel" layoutX="728.0" layoutY="8.0" text="X" textFill="#8d8d8d" />
+      <VBox fillWidth="false" layoutX="335.0" layoutY="17.0" prefHeight="527.0" prefWidth="383.0" spacing="5.0" styleClass="m_keypadBackground" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="335.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="17.0">
+         <children>
+            <TextArea id="keypadArea" fx:id="display" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="334.0" promptText="____">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <GridPane fx:id="keypad" alignment="CENTER" prefHeight="375.0" prefWidth="280.0" styleClass="keypadGrid">
+              <columnConstraints>
+                <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="NUM1" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="1" textAlignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM2" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="2" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM3" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="3" textAlignment="CENTER" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM4" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="4" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM5" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM6" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM7" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="7" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM8" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM9" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NUM0" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" styleClass="keypad" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="DEL" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" text="DEL" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="keypad" />
+                        <String fx:value="keypad_options" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="AC" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" text="AC" textAlignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="keypad" />
+                        <String fx:value="keypad_options" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="15.0" right="20.0" top="25.0" />
+         </padding>
+      </VBox>
+      <ImageView fx:id="light" layoutX="621.0" layoutY="122.0">
+         <image>
+            <Image url="@../img/light_grey.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

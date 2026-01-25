@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="720.0" prefWidth="1280.0" styleClass="computerRoomBG" stylesheets="@../css/DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.ComputerRoomController">
+   <children>
+      <Button fx:id="tutorial" alignment="TOP_LEFT" graphicTextGap="0.0" layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="50.0" styleClass="gameTutorial" textFill="#e7e7e7" />
+      <ImageView fx:id="settingsIcon" layoutX="1242.0" layoutY="685.0">
+         <image>
+            <Image url="@../img/settings_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MONITOR" layoutX="558.0" layoutY="170.0">
+         <image>
+            <Image url="@../img/ComputerRoom/computer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="REDLIGHT" layoutX="708.0" layoutY="169.0">
+         <image>
+            <Image url="@../img/ComputerRoom/redLight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="GREYLIGHT" layoutX="708.0" layoutY="169.0">
+         <image>
+            <Image url="@../img/ComputerRoom/greyLight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="door" fitHeight="237.0" fitWidth="196.0" layoutX="935.0" layoutY="-68.0" opacity="0.78">
+         <image>
+            <Image url="@../img/ComputerRoom/door.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FADE" fitHeight="720.0" fitWidth="1280.0" layoutY="1.0">
+         <image>
+            <Image url="@../img/laboratoryDoorRoom/blackness.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

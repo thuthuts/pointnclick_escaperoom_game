@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "13ce6460-8b1c-4ad5-b761-ce0182876165",
+		"name": "Local-EscapeRoom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/players",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZXNjYXBlOmphbnNs",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"UwU\",\"endDate\":\"2020-11-25, 13:39:35\",\"startDate\":\"2020-11-25, 13:39:35\",\"sumPlayTime\":\"0:0:4:5\",\"failCounter\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/players",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/players",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZXNjYXBlOmphbnNs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/players",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"players"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/players",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZXNjYXBlOmphbnNs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/players/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d5a1dccb-28db-4584-869a-bb3261a6cc4e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6d7cce13-47fb-41c3-97f4-64d3c53a2c1e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "018b0509-290a-47f3-9a09-4cbcaa072152",
+			"key": "host",
+			"value": ""
+		}
+	],
+	"protocolProfileBehavior": {}
+}

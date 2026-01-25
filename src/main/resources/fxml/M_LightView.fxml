@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.minigame.M_LightController">
+    <children>
+        <ImageView fx:id="imageViewBackground" fitHeight="560.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/schaltschrank.png" />
+            </image>
+        </ImageView>
+        <Label id="closeLabel" fx:id="closeLabel" layoutX="728.0" layoutY="8.0" text="X" textFill="#bfbfbf" />
+        <ImageView fx:id="imageViewLogicalLabel1" fitHeight="37.0" fitWidth="360.0" layoutX="172.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewLogicalLabel2" fitHeight="37.0" fitWidth="360.0" layoutX="172.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewLogicalLabel3" fitHeight="37.0" fitWidth="360.0" layoutX="172.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewLogicalLabel4" fitHeight="37.0" fitWidth="360.0" layoutX="172.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true" />
+
+        <ImageView fx:id="imageViewButton1" fitHeight="37.0" fitWidth="70.0" layoutX="539.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewButton2" fitHeight="37.0" fitWidth="70.0" layoutX="539.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewButton3" fitHeight="37.0" fitWidth="70.0" layoutX="539.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewButton4" fitHeight="37.0" fitWidth="70.0" layoutX="539.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="imageViewPowerSlider" fitHeight="50.0" fitWidth="63.0" layoutX="508.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageViewPowerOff" fitHeight="50.0" fitWidth="44.0" layoutX="461.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageViewPowerOn" fitHeight="50.0" fitWidth="44.0" layoutX="568.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
