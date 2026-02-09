@@ -1,0 +1,10 @@
+module:project
+project.animation
+project.audio
+project.game
+project.game.player
+project.gui
+project.gui.minigame
+project.network
+project.thread
+project.utils
